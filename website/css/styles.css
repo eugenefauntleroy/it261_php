@@ -20,12 +20,15 @@ header {
     margin:20px auto;
 }
 
-#logo {
+#logo { 
     float:left;
+    width:180px;
+    margin-bottom:20px;
+
 }
 
 nav { 
-    height: 50px;
+    height:50px;
     float:right;
 }
 

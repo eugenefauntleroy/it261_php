@@ -20,7 +20,7 @@ header {
     margin:20px auto;
 }
 
-#logo { 
+#LOGO { 
     float:left;
     width:180px;
     margin-bottom:20px;
@@ -43,4 +43,45 @@ nav li {
 
 nav a {
     text-decoration: none;
+}
+
+#wrapper {
+    max-width:1100px;
+    margin:20px auto;
+}
+
+#hero {
+    height:300px;
+    margin-bottom:20px;
+    background:white;
+}
+
+main {
+width:61.70%;
+height:400px;
+background:rgb(142, 150, 153);
+float:left;
+margin-bottom: 20px;
+}
+
+aside {
+width:36.17%;
+float:right;
+height:300px;
+background:rgb(211, 216, 211);
+
+}
+
+footer {
+    height:50px;
+    line-height:50px;
+    border-top:1px dotted #333;
+    clear:both;
+
+}
+
+footer li {
+    float:left;
+    list-style-type: none;
+    margin-left:20px;
 }

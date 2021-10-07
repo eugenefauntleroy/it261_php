@@ -1,3 +1,13 @@
+<?php
+
+$vegetables[]= 'spinach';
+$vegetables[]= 'broccoli';
+$vegetables[]= 'asparagus';
+$vegetables[]= 'kale';
+
+?>
+
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -12,5 +22,13 @@ rel="stylesheet">
 </head>
 
 <body>
+
+
+<?php
+
+print_r($vegitables);
+
+?>
+
 </body>
 </html>

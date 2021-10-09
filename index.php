@@ -26,7 +26,6 @@ rel="stylesheet">
 
 <?php
 
-print_r($vegitables);
 
 ?>
 

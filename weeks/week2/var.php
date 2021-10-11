@@ -43,7 +43,7 @@ echo '<br';
 $first_name = 'Michito';
 $last_name = 'Iwata';
 
-echo $first_name.' '. lastname;
+echo $first_name.' '.$lastname;
 //above line not executing!!!
 echo '<br>';
 
@@ -106,7 +106,7 @@ $fruit = array(
     'banana',
     'grapes',
     'apples',
-    'cherries',
+    'cherries'
 );
 
 $fruit = [
@@ -162,7 +162,7 @@ $show_actor = 'Carrey';
 $show_genre = 'Comedy';
 
 echo 'My favorite Jim Carrey film is "'.$show.'". The antagonist, '.$show_actor.' plays a leftfield, 
-and somewhat of a career risking role in this cult classic feature, although it is still considered a'.$show_genre.' ';
+and somewhat of a career risking role in this cult classic feature, although it is still considered a '.$show_genre.' ';
 echo '<br';
 //not executing
 

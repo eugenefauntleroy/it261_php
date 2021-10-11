@@ -37,6 +37,18 @@ $vegetables[]= 'kale';
     </div> <!--en d header inner-->
     </header>
     <div id="wrapper">
+        <h2>Web Site</h2>
+        <p>About me</p>
+        <img src="images/mich_dig copy.jpg" alt="This is my image" width="250" height="250"/>
+        <h3>Week 2</h3>
+        <ul>
+        <li><a href="/Applications/MAMP/htdocs/it261/weeks/week2/var.php">var.php</a></li> 
+        <li><a href="/Applications/MAMP/htdocs/it261/weeks/week2/var2.php">var2.php</a></li>
+        <li><a href="/Applications/MAMP/htdocs/it261/weeks/week2/currency-logic.php">currency-logic.php<a></li>
+        <li><a href="/Applications/MAMP/htdocs/it261/weeks/week2/currency.php">currency</a></li>
+        <li><a href="/Applications/MAMP/htdocs/it261/weeks/week2/heredoc.php">heredoc</a></li>
+        </ul>
+
     <div id="hero">
 
     </div> <!--end hero-->

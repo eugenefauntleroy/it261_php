@@ -10,13 +10,13 @@
 
 <body>
     <header>
-            <div class="header-inner">
+        <div class="header-inner">
         <a href="index.html">
         <img id="LOGO" src="images/1422px-PHP-logo.svg.png"
         alt="LOGO">
         </a>
         <nav>
-            <ul>
+    <ul>
 <li><a href="">Home</a></li> 
 <li><a href="">About</a></li>
 <li><a href="">Daily<a></li>
@@ -42,7 +42,7 @@
         <li><a href="week2/currency.php">currency</a></li>
         <li><a href="weeks/week2/heredoc.php">heredoc</a></li>
 
-</ul>
+     </ul>
     <div id="hero">
 
     </div> <!--end hero-->

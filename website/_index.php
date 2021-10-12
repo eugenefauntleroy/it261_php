@@ -1,12 +1,3 @@
-<?php
-
-$vegetables[]= 'spinach';
-$vegetables[]= 'broccoli';
-$vegetables[]= 'asparagus';
-$vegetables[]= 'kale';
-
-?>
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -38,17 +29,20 @@ $vegetables[]= 'kale';
     </header>
     <div id="wrapper">
         <h2>Web Site</h2>
-        <p>About me</p>
+        <p>About Me:</p>
+        <p>I am a student at Seattle Central college focusing on data analytics and management. I plan to attend WSU next year to pursue a 
+            degree in political science, focusing on international studies. Other than that, I enjoy traveling and music. 
+        </p>
         <img src="images/mich_dig copy.jpg" alt="This is my image" width="250" height="250"/>
         <h3>Week 2</h3>
         <ul>
         <li><a href="/Applications/MAMP/htdocs/it261/weeks/week2/var.php">var.php</a></li> 
-        <li><a href="/Applications/MAMP/htdocs/it261/weeks/week2/var2.php">var2.php</a></li>
-        <li><a href="/Applications/MAMP/htdocs/it261/weeks/week2/currency-logic.php">currency-logic.php<a></li>
-        <li><a href="/Applications/MAMP/htdocs/it261/weeks/week2/currency.php">currency</a></li>
-        <li><a href="/Applications/MAMP/htdocs/it261/weeks/week2/heredoc.php">heredoc</a></li>
-        </ul>
+        <li><a href="var2.php">var2.php</a></li>
+        <li><a href="currency-logic.php">currency-logic.php<a></li>
+        <li><a href="week2/currency.php">currency</a></li>
+        <li><a href="weeks/week2/heredoc.php">heredoc</a></li>
 
+</ul>
     <div id="hero">
 
     </div> <!--end hero-->
@@ -56,7 +50,7 @@ $vegetables[]= 'kale';
 
 <?php
 
-print_r($vegetables);
+//print_r($vegetables);
 
 ?>
 

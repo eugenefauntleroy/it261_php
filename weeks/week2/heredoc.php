@@ -14,7 +14,6 @@ displayed in red (not orange), and my variables are displayed in black!!!
 hand;
 
 //'Once I use "heredoc," all of my content is displayed in 'red.' 
-hand;
 
 echo $content;
 

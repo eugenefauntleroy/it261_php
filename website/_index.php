@@ -56,12 +56,12 @@
 <!--end wrapper-->
 <footer>
 <ul>
-<li>Copyright &copy; 2021</li>
+<li>&copy; Copyright 2021</li>
 <li>All Rights Reserved </li>
 <li><a href="">Terms of use</a></li>
 <li><a href="">Web Design by Michito</a></li>
-<li><a href="">HTML Validation</a></li>
-<li><a href="">CSS Validation</a></li>
+<li><a href="images/html_validation.jpg">HTML Validation</a></li>
+<li><a href="images/css_validation.jpg">CSS Validation</a></li>
 </ul>
 </footer>
     

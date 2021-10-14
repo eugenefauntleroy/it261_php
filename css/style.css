@@ -54,7 +54,7 @@ nav a {
 }
 
 #hero {
-    overflow: auto;
+    overflow: scroll;
     margin-top:20px;
     height:300px;
     margin-bottom:20px;
@@ -85,7 +85,7 @@ footer {
     line-height:30px;
     border-top:1px dotted #333;
     clear:both;
-    position:absolute;bottom:0;left:0;right:0;height:30px;
+    position: fixed;bottom:0;left:0;right:0;height:30px;
 }
 
 footer li {

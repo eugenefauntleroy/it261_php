@@ -19,7 +19,7 @@
             <ul>
 <li><a href="">Home</a></li> 
 <li><a href="">About</a></li>
-<li><a href="">Daily<a></li>
+<li><a href="">Daily</a></li>
 <li><a href="">People</a></li>
 <li><a href="">Contact</a></li>
 <li><a href="">Gallery</a></li>
@@ -30,15 +30,14 @@
 <div id="wrapper">
 
 <main>
-        <h2>Web Site</h2>
-        <p>About Me:</p>
-        <p>I am a student at Seattle Central college focusing on data analytics and management. I plan to attend WSU next year to pursue a 
-            degree in political science, focusing on international studies. Other than that, I enjoy traveling and music. 
-        </p>
-        <img src="images/mich_dig copy.jpg" alt="This is my image" width="240" height="240"/>
+    <h2>Web Site</h2>
+    <p>About Me:</p>
+    <p>I am a student at Seattle Central college focusing on data analytics and management. I plan to attend WSU next year to pursue a 
+    degree in political science, focusing on international studies. Other than that, I enjoy traveling and music.</p>
+    <img src="images/mich_dig_copy.jpg" alt="This is my image" width="240" height="240"/>
     <div id="hero">
     <img src="images/ss_1.png" alt="This is my image" width="680" height ="250"/>
-    <img src="images/ss_2.png" alt="This is my image"width="680"/>
+    <img src="images/ss_2.png" alt="This is my image" width="680"/>
     </div> <!--end hero-->
 </main>
     
@@ -48,7 +47,7 @@
             <ul>
             <li><a href="weeks/week2/var.php">var.php</a></li> 
             <li><a href="weeks/week2/var2.php">var2.php</a></li>
-            <li><a href="weeks/week2/currency-logic.php">currency-logic.php<a></li>
+            <li><a href="weeks/week2/currency-logic.php">currency-logic.php</a></li>
             <li><a href="weeks/week2/currency.php">currency</a></li>
             <li><a href="weeks/week2/heredoc.php">heredoc</a></li> 
             </ul>      

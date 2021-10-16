@@ -66,7 +66,7 @@
 <li><a href="">Terms of use</a></li>
 <li><a href="">Web Design by Michito</a></li>
 <li><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fiwata-mich.000webhostapp.com%2Fit261%2F">HTML Validation</a></li>
-<li><a href="http://jigsaw.w3.org/css-validator/validator$link
+<li><a href="http://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fiwata-mich.000webhostapp.com%2Fit261%2Fcss%2Fstyle.css&profile=css3svg&usermedium=all&warning=1&vextwarning=
 ">CSS Validation</a></li>
 </ul>
 </footer>

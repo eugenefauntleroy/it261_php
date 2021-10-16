@@ -34,7 +34,7 @@
         <p>I am a student at Seattle Central college focusing on data analytics and management. I plan to attend WSU next year to pursue a 
             degree in political science, focusing on international studies. Other than that, I enjoy traveling and music. 
         </p>
-        <img src="images/mich_dig copy.jpg" alt="This is my image" width="240" height="240"/>
+        <img src="images/mich_dig_copy.jpg" alt="This is my image" width="240" height="240"/>
 
 
     <div id="hero">

@@ -19,7 +19,7 @@
             <ul>
 <li><a href="">Home</a></li> 
 <li><a href="">About</a></li>
-<li><a href="">Daily<a></li>
+<li><a href="">Daily</a></li>
 <li><a href="">People</a></li>
 <li><a href="">Contact</a></li>
 <li><a href="">Gallery</a></li>
@@ -39,8 +39,9 @@
 
     <div id="hero">
     <img src="images/ss_1.png" alt="This is my image" width="680" height ="250"/>
-    <img src="images/ss_2.png" alt="This is my image"width="680"/>
+    <img src="images/ss_2.png" alt="This is my image" width="680"/>
     </div> <!--end hero-->
+    </div> <!--end wrapper-->
 
 </main>
     
@@ -50,13 +51,13 @@
         <ul>
         <li><a href="weeks/week2/var.php">var.php</a></li> 
         <li><a href="weeks/week2/var2.php">var2.php</a></li>
-        <li><a href="weeks/week2/currency-logic.php">currency-logic.php<a></li>
+        <li><a href="weeks/week2/currency-logic.php">currency-logic.php.</a></li>
         <li><a href="weeks/week2/currency.php">currency</a></li>
         <li><a href="weeks/week2/heredoc.php">heredoc</a></li> 
         </ul>      
 </aside>
 
-</div> <!--end wrapper-->
+
 
 <footer>
 <ul>
@@ -64,8 +65,9 @@
 <li>All Rights Reserved </li>
 <li><a href="">Terms of use</a></li>
 <li><a href="">Web Design by Michito</a></li>
-<li><a href="">HTML Validation</a></li>
-<li><a href="">CSS Validation</a></li>
+<li><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fiwata-mich.000webhostapp.com%2Fit261%2F">HTML Validation</a></li>
+<li><a href="http://jigsaw.w3.org/css-validator/validator$link
+">CSS Validation</a></li>
 </ul>
 </footer>
     

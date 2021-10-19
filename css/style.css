@@ -79,6 +79,11 @@ background:rgb(211, 216, 211);
 
 }
 
+img {
+
+/*match square photo*/
+
+}
 
 footer {
     height:30px;
@@ -94,3 +99,5 @@ footer li {
     margin-left:20px;
     
 }
+
+/*assign daily class with different background color for each day*/

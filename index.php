@@ -19,7 +19,7 @@
             <ul>
 <li><a href="">Home</a></li> 
 <li><a href="">About</a></li>
-<li><a href="">Daily</a></li>
+<li><a href="daily.php">Daily</a></li>
 <li><a href="">People</a></li>
 <li><a href="">Contact</a></li>
 <li><a href="">Gallery</a></li>
@@ -49,15 +49,21 @@
         <h2>My Class Exercises</h2>
         <h3>Week 2</h3>
         <ul>
-        <li><a href="weeks/week2/var.php">var.php</a></li> 
+        <li><a href="weeks/week2/var.php">var.php</a></li>
         <li><a href="weeks/week2/var2.php">var2.php</a></li>
         <li><a href="weeks/week2/currency-logic.php">currency-logic.php.</a></li>
         <li><a href="weeks/week2/currency.php">currency</a></li>
         <li><a href="weeks/week2/heredoc.php">heredoc</a></li> 
         </ul>      
+        <h3>Week 3</h3>
+        <ul>
+        <li><a href="weeks/week3/date.php">date.php</a></li> 
+        <li><a href="weeks/week3/foreach.php">foreach.php</a></li>
+        <li><a href="weeks/week3/forloop.php">forloop.php</a></li>
+        <li><a href="weeks/week3/if.php">if.php</a></li>
+        <li><a href="weeks/week3/switch.php">switch.php</a></li> 
+        </ul>   
 </aside>
-
-
 
 <footer>
 <ul>

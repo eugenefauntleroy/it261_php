@@ -23,7 +23,7 @@ switch(THIS_PAGE) {
     case 'daily.php':
     $title = 'Daily page of our it261 website';
     $body = 'daily inner';
-    $headline = 'Daily page where homework3 will display';
+    $headline = 'Homework';
     break;
     case 'project.php':
     $title = 'Project page of our it261 website';
@@ -82,8 +82,8 @@ if(isset($_GET['today'])) {
 
 <ul>
     <?php
-    foreach ($nav as $key => $value) {
-    if($THIS_PAGE == $key) {
+    foreach($nav as $key => $value) {
+    if(THIS_PAGE == $key) {
         echo '
         <li><a class="current"'.$key.'">'.$value.'</a></li>
         ';

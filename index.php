@@ -29,7 +29,7 @@
     </header>
 <main>
     <div id="wrapper">
-        <h2>Web Site</h2>
+        <h2>Website</h2>
         <p>About Me:</p>
         <p>I am a student at Seattle Central college focusing on data analytics and management. I plan to attend WSU next year to pursue a 
             degree in political science, focusing on international studies. Other than that, I enjoy traveling and music. 

@@ -2,7 +2,7 @@
 include('includes/header.php'); ?>
 
     <div id="wrapper">
-    <dif id="hero">
+
     
     </div>
 

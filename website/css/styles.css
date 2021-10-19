@@ -1,4 +1,4 @@
-/* Steyles for my main website in it261 */
+/* Styles for my main website in it261 */
 
 * {
     padding:0;
@@ -43,6 +43,11 @@ nav li {
 
 nav a {
     text-decoration: none;
+}
+
+.current {
+    color:red;
+    font-weight: bold;
 }
 
 #wrapper {

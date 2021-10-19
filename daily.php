@@ -6,7 +6,7 @@ if(isset($_GET['today'])) {
     }
 switch($today) {
     case 'Sunday' :
-    $music = '<h2>Sunday is for sleeping in & Hip Hop!</h2>';
+    $music = 'Sunday is for sleeping in & Hip Hop!';
     $pic = 'images/genreimages/black_elvis.jpg';
     $alt = 'Kool Keith';
     $color = 'style="background-color:thistle"';
@@ -16,7 +16,7 @@ switch($today) {
             
     switch($today) {
     case 'Monday' :
-    $music = '<h2>Monday is for Jazz!</h2>';
+    $music = 'Monday is for Jazz!';
     $pic = 'images/genreimages/chet.jpg';
     $alt = 'Chet Baker';
     $color = 'style="background-color:grey"';
@@ -26,7 +26,7 @@ switch($today) {
         
     switch($today) {
     case 'Tuesday' :
-    $music= 'Tuesday is for Industrial!</h2>';
+    $music= 'Tuesday is for Industrial!';
     $pic = 'images/genreimages/ebb.jpg';
     $alt = 'N.EBB';
     $color = 'style="background-color:white"';
@@ -35,7 +35,7 @@ switch($today) {
                 
     switch($today) {
     case 'Wednesday' :
-    $music = '<h2>Wednesdays are for Rock!';
+    $music = 'Wednesdays are for Rock!';
     $pic = 'images/genreimages/guitar_wolf.jpg';$alt = 'Guitar Wolf';
     $color = 'style="background-color:lavender"';
     $content = 'Guitar Wolf is a Japanese garage rock power trio founded in Tokyo in 1987. They coined the phrase "jet rock and roll", which they use to describe their musical style.';
@@ -45,7 +45,7 @@ switch($today) {
                     
     switch($today) {
     case 'Thursday' :
-    $music = '<h2>Thuesdays are for excentric Japanese artists</h2>';
+    $music = 'Thuesdays are for excentric Japanese artists';
     $pic = 'images/genreimages/jun_togawa.jpg';
     $alt = 'Togawa';
     $color = 'style="background-color:#f0f5f9"';
@@ -55,7 +55,7 @@ switch($today) {
                         
     switch($today) {
     case 'Friday' :
-    $music = '<h2>Fridays are for Laurie Anderson</h2>';
+    $music = 'Fridays are for Laurie Anderson';
     $pic = 'images/genreimages/laurie.jpg';
     $alt = 'Weirdo 80s Lady';
     $color = 'style="background-color:green"';
@@ -65,7 +65,7 @@ switch($today) {
                             
     switch($today) {
     case 'Saturday' :
-    $music = '<h2>Weekend--->24 hour marathon with Ricardo!</h2>';
+    $music = 'Weekend--->24 hour marathon with Ricardo!';
     $pic = 'images/genreimages/ricardo.jpg';
     $alt = 'Ricardo Villalobos';
     $color = 'style="background-color:#CB9617"';
@@ -109,7 +109,7 @@ switch($today) {
 <main>
     <div id="wrapper">
         <h2>Weekly Music Picks</h2>
-        <h1 class ="daily"> <?php echo $music; $l; ?></h1>      
+        <h3 class ="daily"> <?php echo $music; $l; ?></h3>      
         <div class="daily" <?php echo $color;?>> 
 
 <div class="content">
@@ -128,15 +128,14 @@ switch($today) {
     <li><a href="daily.php?today=Saturday">Saturday</a></li>
 </ul>  
 </div>
-</div>
 
 </main>
+</div> <!--end wrapper-->
 
 <aside>
 <img src= "<?php echo $pic; ?>" alt="<?php echo $alt?>" width=250px height=250px> 
 </img>
 </aside>
-</div> <!--end wrapper-->
     
 <footer>
 <ul>

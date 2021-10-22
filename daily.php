@@ -128,7 +128,7 @@ switch($today) {
     <li><a href="daily.php?today=Saturday">Saturday</a></li>
 </ul>  
 </div>
-
+</div>
 </main>
 </div> <!--end wrapper-->
 

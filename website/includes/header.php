@@ -2,7 +2,7 @@
 
 define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
 
-$nav['_index.php']= 'Home';
+$nav['index.php']= 'Home';
 $nav['about.php']= 'About';
 $nav['daily.php']= 'Daily';
 $nav['project.php']= 'Project';
@@ -85,7 +85,7 @@ if(isset($_GET['today'])) {
     foreach($nav as $key => $value) {
     if(THIS_PAGE == $key) {
         echo '
-        <li><a class="current"'.$key.'">'.$value.'</a></li>
+        <li><a href="'.$key.'" class="current">'.$value.'</a></li>
         ';
     } else {
         echo '
@@ -94,7 +94,7 @@ if(isset($_GET['today'])) {
     } 
     }
     ?>
-
+</ul>
     </nav>
     </div> <!--en d header inner-->
     </header>

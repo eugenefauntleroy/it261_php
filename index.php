@@ -28,18 +28,25 @@
     </div> <!--en d header inner-->
     </header>
 <main>
-    <div id="wrapper">
+
+        <div id="wrapper">
+        <h3>My Main Assignments</h3>
+        <a href="website/index.php">Using a Switch, HW3</a>
         <h2>Website</h2>
         <p>About Me:</p>
         <p>I am a student at Seattle Central college focusing on data analytics and management. I plan to attend WSU next year to pursue a 
             degree in political science, focusing on international studies. Other than that, I enjoy traveling and music. 
         </p>
-        <img src="images/mich_dig_copy.jpg" alt="This is my image" width="240" height="240"/>
+        <img src="images/mich_dig_copy.jpg" alt="This is my image" width="200" height="200"/>
 
 
     <div id="hero">
     <img src="images/ss_1.png" alt="This is my image" width="680" height ="250"/>
     <img src="images/ss_2.png" alt="This is my image" width="680"/>
+    <img src="images/ss_3.jpg" alt="This is my image" width="680"/>
+    <img src="images/ss_4.jpg" alt="This is my image" width="680"/>
+
+
     </div> <!--end hero-->
     </div> <!--end wrapper-->
 

@@ -61,38 +61,22 @@ if(isset($_GET['today'])) {
         }
         ?>
 
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Switch Class Exercise</title>
-<style>
-#wrapper {
-    width:80%;
-    margin:0 auto;
-} 
 
-#wrapper {
-    background:<?php echo $color;?>
-}
-</style>    
 
-</head>
-<body>
 <div id="wrapper">
 <h1>My Switch Classwork Exercise</h1>
 <img src= "<?php echo $pic; ?>" alt="<?php echo $alt?>" width=400 height=300> 
-</img><br>
+<br>
 <?php echo $content;?>
 <h2>Check out these seven countries that start with the word "A"!</h2>
 <ul>
-    <li><a href="switch.php?today=Sunday">Sunday</a></li>
-    <li><a href="switch.php?today=Monday">Monday</a></li>
-    <li><a href="switch.php?today=Tuesday">Tuesday</a></li>
-    <li><a href="switch.php?today=Wednesday">Wednesday</a></li>
-    <li><a href="switch.php?today=Thursday">Thursday</a></li>
-    <li><a href="switch.php?today=Friday">Friday</a></li>
-    <li><a href="switch.php?today=Saturday">Saturday</a></li>
+    <li><a href="index.php?today=Sunday">Sunday</a></li>
+    <li><a href="index.php?today=Monday">Monday</a></li>
+    <li><a href="index.php?today=Tuesday">Tuesday</a></li>
+    <li><a href="index.php?today=Wednesday">Wednesday</a></li>
+    <li><a href="index.php?today=Thursday">Thursday</a></li>
+    <li><a href="index.php?today=Friday">Friday</a></li>
+    <li><a href="index.php?today=Saturday">Saturday</a></li>
 </ul>  
 </div>
 <footer>

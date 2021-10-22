@@ -10,6 +10,13 @@
 //echo $far;
 //For this FOR LOOP, you cannot use the $celcius var outside of the loop!
 
+for ($mile = 0; $mile <=200; $mile+=1) {
+    $kilometer = ($mile * 1.609);
+    $friendly_kilo = floor($kilometer);
+    echo '<br> Miles:</b> '.$mile.' <b>Kilometers:</b> '.$friendly_kilo.' '; 
+
+}
+
 for($celcius = 0;  $celcius <=100; $celcius +=5) {
     $far = ($celcius * 9/5) +32;
     echo ''.$celcius.' &nbsp; &nbsp; '.$far.' <br>';

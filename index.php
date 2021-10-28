@@ -33,7 +33,7 @@
 
         <div id="wrapper">
         <h3>My Main Assignments</h3>
-        <a href="website/index.php">Using a Switch, HW3</a>
+        <a href="website/daily.php">Using a Switch, HW3</a>
         <h2>Website</h2>
         <p>About Me:</p>
         <p>I am a student at Seattle Central college focusing on data analytics and management. I plan to attend WSU next year to pursue a 

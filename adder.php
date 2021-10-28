@@ -16,7 +16,7 @@ echo ' <p style=" color:thistle;"> and the answer is
 <title>Adder Assignment</title>
 <style>
  p {
-        color:red;
+        color:thistle;
         text-align: center;
     }
     

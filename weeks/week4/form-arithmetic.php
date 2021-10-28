@@ -10,7 +10,7 @@
         margin:0 auto;
     }
     fieldset {
-        border:1px solid red;
+        border:1px ;
         padding:10px;
     }
     label, textarea {
@@ -27,7 +27,7 @@
         margin-bottom:10px;
     }
     h3 {
-        color:red;
+        color:thistle;
         text-align:center;
     }
     .box {
@@ -45,7 +45,7 @@
     <label for="fname">First Name</label>
     <input type="text" name="fname">
 
-    <label for="coffees">How many coffees?</label>
+    <label for="coffees">How many countries in?</label>
     <input type="number" name="coffees">
 
     <label for="lattes">Lattes</label>

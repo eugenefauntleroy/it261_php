@@ -33,7 +33,8 @@
 
         <div id="wrapper">
         <h3>My Main Assignments</h3>
-        <a href="website/daily.php">Using a Switch, HW3</a>
+        <a href="website/daily.php">Using a Switch, HW3</a><br>
+        <a href="adder.php">Toubleshooting, HW4</a>
         <h2>Website</h2>
         <p>About Me:</p>
         <p>I am a student at Seattle Central college focusing on data analytics and management. I plan to attend WSU next year to pursue a 
@@ -72,6 +73,14 @@
         <li><a href="weeks/week3/if.php">if.php</a></li>
         <li><a href="weeks/week3/switch.php">switch.php</a></li> 
         </ul>   
+        <h3>Week 4</h3>
+        <li><a href="weeks/week4/celcius.php">celcius.php</a></li> 
+        <li><a href="weeks/week4/form-arithmetic.php">form-arithmetic.php</a></li> 
+        <li><a href="weeks/week4/form1.php">form1.php</a></li> 
+        <li><a href="weeks/week4/form2.php">form2.php</a></li> 
+        <li><a href="weeks/week4/form3.php">form3.php</a></li> 
+
+
 </aside>
 
 <footer>

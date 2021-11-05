@@ -20,21 +20,22 @@
 <li><a href="">Home</a></li> 
 <li><a href="website/daily.php">Switch</a></li>
 <li><a href="">Troubleshoot</a></li>
-<li><a href="">Calculator</a></li>
+<li><a href="calculator-days-errors-sticky.php">Calculator</a></li>
 <li><a href="">Email</a></li>
 <li><a href="">Gallery</a></li>
 <li><a href="">Database</a></li>
 
 </ul>
     </nav>
-    </div> <!--en d header inner-->
+    </div> 
     </header>
 <main>
 
         <div id="wrapper">
         <h3>My Main Assignments</h3>
         <a href="website/daily.php">Using a Switch, HW3</a><br>
-        <a href="adder.php">Toubleshooting, HW4</a>
+        <a href="adder.php">Toubleshooting, HW4</a><br>
+        <a href="calculator-days-errors-sticky.php">Calculator, HW5</a>
         <h2>Website</h2>
         <p>About Me:</p>
         <p>I am a student at Seattle Central college focusing on data analytics and management. I plan to attend WSU next year to pursue a 
@@ -72,14 +73,22 @@
         <li><a href="weeks/week3/forloop.php">forloop.php</a></li>
         <li><a href="weeks/week3/if.php">if.php</a></li>
         <li><a href="weeks/week3/switch.php">switch.php</a></li> 
-        </ul>   
+        </ul> 
         <h3>Week 4</h3>
+        <ul>    
         <li><a href="weeks/week4/celcius.php">celcius.php</a></li> 
         <li><a href="weeks/week4/form-arithmetic.php">form-arithmetic.php</a></li> 
         <li><a href="weeks/week4/form1.php">form1.php</a></li> 
         <li><a href="weeks/week4/form2.php">form2.php</a></li> 
         <li><a href="weeks/week4/form3.php">form3.php</a></li> 
-
+        </ul> 
+        <h3>Week 5</h3>
+        <ul>    
+        <li><a href="weeks/week5/currency1.php">currency1.php</a></li> 
+        <li><a href="weeks/week5/currency2.php">currency2.php</a></li> 
+        <li><a href="weeks/week5/currency3.php">currency3.php</a></li> 
+        <li><a href="weeks/week5/currency4.php">currency4.php</a></li> 
+        </ul> 
 
 </aside>
 

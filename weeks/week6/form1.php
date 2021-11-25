@@ -11,6 +11,7 @@ $gender = '';
 $animals = '';
 $regions = '';
 $comments = '';
+$wines = '';
 $privacy = '';
 
 $first_name_Err = '';
@@ -19,6 +20,7 @@ $email_Err = '';
 $phone_Err = '';
 $gender_Err = '';
 $animals_Err = '';
+$wines_Err ='';
 $regions_Err = '';
 $comments_Err = '';
 $privacy_Err = '';
@@ -112,7 +114,7 @@ $_POST['comments'],
 $_POST['privacy']
 )) {
 
-$to = 'iwata.mich@gmail.com';
+$to = 'oszemeo@mystudentswa.com';
 $subject = 'Test Email' .date('m/d/y') ;
 $body = '
 The first name is '.$first_name.' '.PHP_EOL.'

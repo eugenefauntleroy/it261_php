@@ -13,9 +13,10 @@ include('includes/contact_header.php');
 </main> 
     
 <aside class="contact">   
-<?php spice_pics(); ?>
+<?php echo spice_pics(); ?>
 </aside>
 </div> <!-- end contact -->
+</div><!--end wrapper -->
 <?php
 include('includes/footer.php');
 ?>

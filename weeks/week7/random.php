@@ -43,5 +43,5 @@ $photos[4] = 'photo5';
 
 $i = rand(0, 4);
 
-$selected_image = ''.$photos[$i].'.jpg';
-echo '<img src="pics/'.$selected_image.'"   alt="'.$photos[$i].'">';
+$selected_image = 'pics/'.$photos[$i].'.jpeg';
+echo '<img src="'.$selected_image.'"alt="'.$photos[$i].'">';

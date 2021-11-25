@@ -193,7 +193,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         
         )) { 
             
-        $to = 'iwata.mich@gmail.com';
+        $to = 'szemeo@mystudentswa.com';
         $subject = 'Test Email' .date('m/d/y') ;
         $body = '
         First name: '.$first_name.' '.PHP_EOL.'
@@ -237,8 +237,8 @@ $photos[5] = 'images (7)';
 
 $i = rand(0, 4);
 
-$pic = ''.$photos[$i].'.jpg';
-$random_pic = '<img class="random" src="images/'.$pic.'" alt="'.$photos[$i].'">';
+$pic = 'includes/images/'.$photos[$i].'.jpeg';
+$random_pic = '<img class="random" src="'.$pic.'" alt="'.$photos[$i].'">';
 return $random_pic;
 
 } // end random images
@@ -251,13 +251,13 @@ function spice_pics() {
 
     $photos[0] = 'spices-500x500';
     $photos[1] = 'download (1)';
-    $photos[2] = 'download';
+    $photos[2] = 'spice';
     $photos[3] = 'images';
     
     $i = rand(0, 3);
     
-    $pic = ''.$photos[$i].'.jpeg';
-    $spice_pic = '<img class="random" src="images/'.$pic.'" alt="'.$photos[$i].'">';
+    $pic = 'includes/images/'.$photos[$i].'.jpeg';
+    $spice_pic = '<img class="random" src="'.$pic.'" alt="'.$photos[$i].'" width = "250px" height = "250px">';
     return $spice_pic;
     
     } // end random spice mages

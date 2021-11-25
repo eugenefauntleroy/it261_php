@@ -35,7 +35,9 @@
         <h3>My Main Assignments</h3>
         <a href="website/daily.php">Using a Switch, HW3</a><br>
         <a href="adder.php">Toubleshooting, HW4</a><br>
-        <a href="calculator-days-errors-sticky.php">Calculator, HW5</a>
+        <a href="calculator-days-errors-sticky.php">Calculator, HW5</a><br>
+        <a href="website/contact.php">Contact, HW6</a>
+
         <h2>Website</h2>
         <p>About Me:</p>
         <p>I am a student at Seattle Central college focusing on data analytics and management. I plan to attend WSU next year to pursue a 
@@ -89,6 +91,18 @@
         <li><a href="weeks/week5/currency3.php">currency3.php</a></li> 
         <li><a href="weeks/week5/currency4.php">currency4.php</a></li> 
         </ul> 
+        <h3>Week 6</h3>
+        <li><a href="weeks/week6/form1.php">form1.php</a></li> 
+        <li><a href="weeks/week6/functions.php">functions.php</a></li> 
+        <li><a href="weeks/week6/implode.php">implode.php</a></li> 
+        </ul> 
+        <h3>Week 7</h3>
+        <li><a href="weeks/week7/pictures.php">pictures.php</a></li> 
+        <li><a href="weeks/week7/random.php">random.php</a></li> 
+        <li><a href="weeks/week7/string.php">string.php</a></li> 
+        </ul> 
+
+
 
 </aside>
 

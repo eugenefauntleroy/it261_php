@@ -8,7 +8,7 @@ if(isset($_GET['id'])){
     header('Location:people.php');
 }
 
-$sql = 'SELECT * FROM People WHERE PeopleID = '.$id.'';
+$sql = 'SELECT * FROM people WHERE PeopleID = '.$id.'';
 
 //connect to our database
 $iConn = @mysqli_connect(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME) 
@@ -22,8 +22,6 @@ if(mysqli_num_rows($result) > 0){
         $FirstName = stripslashes($row['FirstName']);
         $LastName  = stripslashes($row['LastName']);
         $Occupation = stripslashes($row['Occupation']);
-        $Email = stripslashes($row['Email']);
-        $BirthDate = stripslashes($row['BirthDate']);
         $Description = stripslashes($row['Description']);
         $Feedback = '';
     }
@@ -42,8 +40,6 @@ include('includes/header.php');
             echo '<li><b>First Name: </b> '.$FirstName.' </li>';
             echo '<li><b>Last Name: </b> '.$LastName.' </li>';
             echo '<li><b>Occupation: </b> '.$Occupation.' </li>';
-            echo '<li><b>Email: </b> '.$Email.' </li>';
-            echo '<li><b>Birth date: </b> '.$BirthDate.' </li>';
             echo '</ul>';
             echo '<p> '.$Description.' </p>';
             echo '<br>';
@@ -56,7 +52,7 @@ include('includes/header.php');
 <aside>
 <?php 
     if($Feedback == ''){
-        echo '<img src="images/people'.$id.'.jpg" alt="'.$FirstName.'">';
+        echo '<img src="images/people_pics'.$id.'.jpg" alt="'.$FirstName.'">';
     }else{
         echo $Feedback;
     }

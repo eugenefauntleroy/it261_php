@@ -24,11 +24,11 @@ if(mysqli_num_rows($result) > 0){
         echo '<ul>'; 
         echo '<li class="bold">For more information <a href="people-view.php?id='.$row['PeopleID'].'">'.$row['FirstName'].'</a></li>';
         echo '<li>'.$row['FirstName'].' '.$row['LastName'].'</li>';
-        echo '<li>'.$row['Pronoun'].' Occupation: '.$row['Occupation'].'</li>';
+        echo '<li>'.'Occupation: '.$row['Occupation'].' '.$row['Description'].'</li>';
         echo '</ul>';
     } 
-} else{ 
-    echo "Nobody's home!";
+} else{    
+    echo "Nothing to see here!";
 }
 
 //release the web server
@@ -37,7 +37,7 @@ if(mysqli_num_rows($result) > 0){
 //close the connection
 @mysqli_close($iConn);
 ?>
-</main>
+</main> 
 <aside>
     <h3>This is my aside.</h3>
 </aside>

@@ -11,7 +11,7 @@ function myError($myFile, $myLine, $errorMsg){
         echo "Error message: <b> $errorMsg </b> ";
         die(); //stop the program
     }else{
-        echo "Houston we have a problem!";
+        echo "Something doesn't seem right!";
         die();
     }
 

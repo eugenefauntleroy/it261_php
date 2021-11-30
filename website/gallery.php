@@ -1,10 +1,10 @@
 <?php
-include('includes/config.php');
+include('config.php');
 include('includes/header.php');
 ?>
     <div id="wrapper">
 <main>
-    <h1> <?php echo $mainHeadline;  ?> </h1>
+    <h1> <?php echo $headline;  ?> </h1>
     <table class="Jazz Greats">
     <?php foreach($people as $fullName => $image) : ?>
         <tr>
@@ -19,7 +19,7 @@ include('includes/header.php');
 <aside>
     <h3>More info on our Jazz Greats</h3>
     <?php echo randImages2($jazz); ?>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et tortor id ipsum tincidunt dignissim id ut nibh. Morbi quis augue pretium, auctor sem eget, egestas eros. Mauris justo mauris, accumsan egestas enim in, ullamcorper vestibulum neque. Curabitur porttitor ante turpis, id venenatis leo tristique et.</p>
+    <p>When you hear music, once it's in the air you can never capture it again.</p>
 </aside>
      
 <?php 

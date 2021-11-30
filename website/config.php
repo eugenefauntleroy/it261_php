@@ -72,11 +72,11 @@ switch(THIS_PAGE) {
 
 // WEEK 7 - GALLERY //
 //all the image file names must be 5 letters only!
-$people['John Coltrane'] = 'my fovorite things'; 
-$people['Billie Holiday'] = 'lady sings the blues';
-$people['Thelonius Monk'] = 'round about midnight';
-$people['Charlie Parker'] = 'a night in tunisia';
-$people['Nina Simone'] = 'sealion';
+$people['John Coltrane'] = 'coltr my fovorite things'; 
+$people['Billie Holiday'] = 'hold lady sings the blues';
+$people['Thelonius Monk'] = 'monk round about midnight';
+$people['Charlie Parker'] = 'parke a night in tunisia';
+$people['Nina Simone'] = 'simon sealion';
 
 
 $jazz[0] = 'coltr';

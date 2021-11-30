@@ -19,10 +19,10 @@
             <ul>
 <li><a href="">Home</a></li> 
 <li><a href="website/daily.php">Switch</a></li>
-<li><a href="">Troubleshoot</a></li>
+<li><a href="adder.php">Troubleshoot</a></li>
 <li><a href="calculator-days-errors-sticky.php">Calculator</a></li>
-<li><a href="">Email</a></li>
-<li><a href="">Gallery</a></li>
+<li><a href="website/contact.php">Email</a></li>
+<li><a href="website/gallery.php">Gallery</a></li>
 <li><a href="">Database</a></li>
 
 </ul>
@@ -101,7 +101,10 @@
         <li><a href="weeks/week7/random.php">random.php</a></li> 
         <li><a href="weeks/week7/string.php">string.php</a></li> 
         </ul> 
-
+        <h3>Week 8</h3>
+        <li><a href="weeks/week8/people.php">people.php</a></li> 
+        <li><a href="weeks/week8/people-view.php">people-view.php</a></li> 
+        </ul> 
 
 
 </aside>

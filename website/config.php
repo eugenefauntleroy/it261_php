@@ -70,6 +70,26 @@ switch(THIS_PAGE) {
     break;
 }
 
+// WEEK 7 - GALLERY //
+//all the image file names must be 5 letters only!
+$people['John Coltrane'] = 'my fovorite things'; 
+$people['Billie Holiday'] = 'lady sings the blues';
+$people['Thelonius Monk'] = 'round about midnight';
+$people['Charlie Parker'] = 'a night in tunisia';
+$people['Nina Simone'] = 'sealion';
+
+
+$jazz[0] = 'coltr';
+$jazz[1] = 'holid';
+$jazz[2] = 'monk';
+$jazz[3] = 'parke';
+$jazz[4] = 'simon';
+
+function randImages2($jazz){
+    $i = rand(0, count($jazz)-1);
+    echo '<img src="./images/'.$jazz[$i].'.jpg" alt="Randomly generated image">';
+} //end randImages2
+
 //this is beggining of switch for HW3
 if(isset($_GET['today'])) {
 $today = $_GET['today'];

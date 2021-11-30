@@ -8,7 +8,7 @@ include('includes/header.php');
     <table class="Jazz Greats">
     <?php foreach($people as $fullName => $image) : ?>
         <tr>
-        <td><img src="images/jazz_greats<?php echo substr($image, 0, 5); ?>.jpeg" alt="<?php echo $fullName; ?>"></td>
+        <td><img src="includes/images/jazz_greats<?php echo substr($image, 0, 5); ?>.jpeg" alt="<?php echo $fullName; ?>"></td>
         <td><?php echo str_replace('_', ' ', $fullName); ?></td>
         <td><?php echo substr($image, 6); ?></td>
         </tr>

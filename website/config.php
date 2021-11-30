@@ -87,7 +87,7 @@ $jazz[4] = 'simon';
 
 function randImages2($jazz){
     $i = rand(0, count($jazz)-1);
-    echo '<img src="./images/jazz_greats'.$jazz[$i].'.jpeg" alt="Randomly generated image">';
+    echo '<img src=".includes/images/jazz_greats'.$jazz[$i].'.jpeg" alt="Randomly generated image">';
 } //end randImages2
 
 //this is beggining of switch for HW3

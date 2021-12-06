@@ -52,7 +52,7 @@ include('includes/header.php');
 <aside>
 <?php 
     if($Feedback == ''){
-        echo '<img src="people_pics'.$id.'.jpg" alt="'.$FirstName.'">';
+        echo '<img src="people_pics/'.$LastName.'.jpg" alt="'.$FirstName.'">';
     }else{
         echo $Feedback;
     }

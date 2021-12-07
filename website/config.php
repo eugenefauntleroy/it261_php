@@ -1,5 +1,10 @@
 <?php
 
+ob_start(); //prevents header errors before reading the whole page!
+define('DEBUG', 'TRUE'); //we want to see our errors
+
+include('credentials.php');
+
 define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
 // $key             $value
 $nav['index.php'] = 'Home';
@@ -78,7 +83,6 @@ $people['Thelonius Monk'] = 'monk';
 $people['Charlie Parker'] = 'parker';
 $people['Nina Simone'] = 'simone';
 
-
 $jazz[0] = 'coltr';
 $jazz[1] = 'holid';
 $jazz[2] = 'monk';
@@ -87,7 +91,8 @@ $jazz[4] = 'simon';
 
 function randImages2($jazz){
     $i = rand(0, count($jazz)-1);
-    echo '<img src=".includes/images/jazz_greats'.$jazz[$i].'.jpeg" alt="Randomly generated image">';
+    echo $i; 
+    echo '<img src="images/jazz_greats/'.$jazz[$i].'.jpeg" alt="Randomly generated image">';
 } //end randImages2
 
 //this is beggining of switch for HW3
@@ -282,7 +287,17 @@ function spice_pics() {
     
     } // end random spice mages
 
-
+    function myError($myFile, $myLine, $errorMsg){
+        if(defined('DEBUG') && DEBUG){
+            echo "Error in file: <b> $myFile </b> on line: <b> $myLine </b> ";
+            echo "Error message: <b> $errorMsg </b> ";
+            die(); //stop the program
+        }else{
+            echo "Something doesn't seem right!";
+            die();
+        }
+    
+    }
 
 
 ?>

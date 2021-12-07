@@ -23,7 +23,7 @@
 <li><a href="calculator-days-errors-sticky.php">Calculator</a></li>
 <li><a href="website/contact.php">Email</a></li>
 <li><a href="website/gallery.php">Gallery</a></li>
-<li><a href="">Database</a></li>
+<li><a href="website/project.php">Database</a></li>
 
 </ul>
     </nav>

@@ -7,9 +7,6 @@ include('includes/header.php');
     <div class="contact">
 <main class="contact">   
 <h1 class="contact"> <?php echo $headline; ?></h1>
-<h2 class="contact">Please Fill Out Our Order Form:</h2>
-<?php include('includes/form.php');
-?>
 
 <?php
 // connecting to database
@@ -17,7 +14,7 @@ include('includes/header.php');
 $sql = 'SELECT * FROM new';
 
 $iConn = @mysqli_connect(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME) 
-or die(myerror(__FILE__,__LINE__,mysqli_ connect_error()));
+or die(myerror(__FILE__,__LINE__,mysqli_connect_error()));
 //we extract the data here
 
 $result = mysqli_query($iConn,$sql) or die(myerror(__FILE__,__LINE__,mysqli_error($iConn)));
@@ -45,8 +42,8 @@ if(mysqli_num_rows($result) > 0){
 
 </main> 
     
-<aside class="contact">   
-<?php echo spice_pics(); ?>
+<aside> 
+<h3>Our Aside for Project</h3>)
 </aside>
 </div> <!-- end contact -->
 </div><!--end wrapper -->

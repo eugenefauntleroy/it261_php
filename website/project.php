@@ -24,9 +24,9 @@ if(mysqli_num_rows($result) > 0){
     while($row = mysqli_fetch_assoc($result)){
         //array will display the contents of row
         echo '<ul>'; 
-        echo '<li class="bold">For more information <a href="new-view.php?id='.$row['one'].'">'.$row['two'].'</a></li>';
-        echo '<li>'.$row['three'].' '.$row['four'].'</li>';
-        echo '<li>'.'description: '.$row['description'].'</li>';
+        echo '<li class="bold">For more information <a href="new-view.php?id='.$row['CityID'].'">'.$row['CityName'].'</a></li>';
+        echo '<li>'.$row['Prefecture'].' '.$row['Population'].'</li>';
+        echo '<li>'.'Description: '.$row['Description'].'</li>';
         echo '</ul>';
     } 
 } else{    

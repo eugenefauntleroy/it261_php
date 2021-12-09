@@ -1,7 +1,3 @@
-<li><a href="">Contact</a></li>
-<li><a href="">Gallery</a></li>
-</ul> -->
-
 <ul>
     <?php
     foreach($nav as $key => $value) {

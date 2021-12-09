@@ -10,7 +10,7 @@ define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
 $nav['index.php'] = 'Home';
 $nav['about.php'] = 'About';
 $nav['daily.php'] = 'Daily';
-$nav['project.php'] = 'Project';
+$nav['project.php'] = 'Cities';
 $nav['contact.php'] = 'Contact';
 // $nav['thx.php'] = 'Thank You';
 $nav['gallery.php'] = 'Gallery';

@@ -6,7 +6,6 @@ include('includes/header.php');
     <div id="wrapper"> 
     <div class="contact">
 <main class="contact">   
-<h1 class="contact"> <?php echo $headline; ?></h1>
 
 <?php
 // connecting to database
@@ -24,7 +23,7 @@ if(mysqli_num_rows($result) > 0){
     while($row = mysqli_fetch_assoc($result)){
         //array will display the contents of row
         echo '<ul>'; 
-        echo '<li class="bold">For more information <a href="new-view.php?id='.$row['CityID'].'">'.$row['CityName'].'</a></li>';
+        echo '<li class="bold">For more information <a href="project-view.php?id='.$row['CityID'].'">'.$row['CityName'].'</a></li>';
         echo '<li>'.$row['Prefecture'].' '.$row['Population'].'</li>';
         echo '<li>'.'Description: '.$row['Description'].'</li>';
         echo '</ul>';

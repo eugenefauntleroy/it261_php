@@ -24,6 +24,7 @@
 <li><a href="website/contact.php">Email</a></li>
 <li><a href="website/gallery.php">Gallery</a></li>
 <li><a href="website/project.php">Cities</a></li>
+<li><a href="project/login.php">Final Project</a></li>
 
 </ul>
     </nav>
@@ -47,7 +48,6 @@
 
 
     <div id="hero">
-    <img src="images/ss_5.jpg" alt="This is my image" width="680" height ="250"/>    
     <img src="images/ss_1.png" alt="This is my image" width="680" height ="250"/>
     <img src="images/ss_2.png" alt="This is my image" width="680"/>
     <img src="images/ss_3.jpg" alt="This is my image" width="680"/>

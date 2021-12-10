@@ -1,9 +1,8 @@
-<?php //server page
+<?php 
 session_start();
-// include('includes/credentials.php');
+//include('includes/credentials.php');
 include('includes/config.php');
 
-//initialize the variables
 $FirstName = '';
 $LastName = '';
 $UserName = '';
@@ -11,20 +10,17 @@ $Email = '';
 $errors = array();
 $success = 'You are now logged in!';
 
-//connect to the database
 $db = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 
-//register the user
 if(isset($_POST['reg_user'])){
-//receive all the info
-$FirstName = mysqli_real_escape_string($db, $_POST['FirstName']); //removes any special chars
+
+$FirstName = mysqli_real_escape_string($db, $_POST['FirstName']); 
 $LastName = mysqli_real_escape_string($db, $_POST['LastName']);
 $UserName = mysqli_real_escape_string($db, $_POST['UserName']);
 $Email = mysqli_real_escape_string($db, $_POST['Email']);
 $Password_1 = mysqli_real_escape_string($db, $_POST['Password_1']);
 $Password_2 = mysqli_real_escape_string($db, $_POST['Password_2']);
 
-//the array push function will be able to add the exact error that we will be referring to
 if(empty($FirstName)){
     array_push($errors, 'First name is required');
 }
@@ -44,7 +40,6 @@ if($Password_1 != $Password_2){
     array_push($errors, 'Passwords must match');
 }
 
-//check to see if there is a username or email out there already that I would like to use
 $user_check_query = "SELECT * FROM Users WHERE UserName = '$UserName' 
     OR Email = '$Email' LIMIT 1";
 $result = mysqli_query($db, $user_check_query);
@@ -59,9 +54,8 @@ if($user){
     }
 }
 
-//if there are no errors then proceed
 if(count($errors) == 0){
-    $Password = md5($Password_1); //encrypt the password
+    $Password = md5($Password_1); //encrypt 
     $query = "INSERT INTO Users (FirstName, LastName, UserName, Email, Password) 
         VALUES ('$FirstName', '$LastName', '$UserName', '$Email', '$Password') ";
     mysqli_query($db, $query);
@@ -71,9 +65,8 @@ if(count($errors) == 0){
     header('Location: login.php');
 }
 
-} //end isset
+} 
 
-//we will return to the server.php page to enter the login information
 if(isset($_POST['login_user'])){
     $UserName = mysqli_real_escape_string($db, $_POST['UserName']);
     $Password = mysqli_real_escape_string($db, $_POST['Password']);
@@ -86,7 +79,7 @@ if(isset($_POST['login_user'])){
     }
 
     if(count($errors) == 0){
-        $Password = md5($Password); //encrypt the password
+        $Password = md5($Password); //encrypt 
         $query = "SELECT * FROM Users WHERE UserName = '$UserName' AND Password = '$Password' ";
         $results = mysqli_query($db, $query);
 

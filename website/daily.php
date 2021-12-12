@@ -1,5 +1,7 @@
 <?php
-include('includes/header.php'); ?>
+include('includes/header.php'); 
+include('config.php'); ?>
+
 
 <?php
 if(isset($_GET['today'])) {

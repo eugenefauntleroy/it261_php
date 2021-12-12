@@ -19,7 +19,7 @@ if(isset($_POST['reg_user'])){
 
 $first_name = mysqli_real_escape_string($db, $_POST['first_name']); 
 $last_name = mysqli_real_escape_string($db, $_POST['last_name']);
-$username = mysqli_real_escape_string($db, $_POST['username']);
+$$username = mysqli_real_escape_string($db, $_POST['$username']);
 $email = mysqli_real_escape_string($db, $_POST['email']);
 $Password_1 = mysqli_real_escape_string($db, $_POST['Password_1']);
 $Password_2 = mysqli_real_escape_string($db, $_POST['Password_2']);
@@ -31,7 +31,7 @@ if(empty($first_name)){
 if(empty($last_name)){
     array_push($errors, 'Last name is required');
 }
-if(empty($username)){
+if(empty($$username)){
     array_push($errors, 'User name is required');
 }
 if(empty($Email)){

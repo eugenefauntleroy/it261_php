@@ -105,6 +105,9 @@
         <h3>Week 8</h3>
         <li><a href="weeks/week8/people.php">people.php</a></li> 
         </ul> 
+        <h3>Week 9</h3>
+        <li><a href="weeks/week9/register.php">register.php</a></li> 
+        </ul> 
 
 
 </aside>

@@ -24,12 +24,12 @@ include('includes/header-form.php');
    if(isset($_POST['email'])) echo $_POST['email']; ?>">  
 
 <label for="password_1">Password</label> 
-<input type="password" name="Password_1"> value="<?php 
+<input type="password" name="Password_1" value="<?php 
    if(isset($_POST['password_1'])) echo $_POST['password_1']; ?>">  
 
 
 <label for="password_2">Confirm your password</label> 
-<input type="password" name="Password_2"> value="<?php 
+<input type="password" name="Password_2" value="<?php 
    if(isset($_POST['password_1'])) echo $_POST['password_2']; ?>">  
 
 <button type="submit" class="btn" name="reg_user">Register</button>
@@ -37,7 +37,7 @@ include('includes/header-form.php');
 <button type="button" onclick="window.location.href = '<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>' ">RESET</button>
 
 <?php 
-include('includes/errors.php');
+include('errors.php');
 ?>
 </fieldset>
 </form>

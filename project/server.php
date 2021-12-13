@@ -1,7 +1,7 @@
 <?php 
 session_start();
 //include('includes/credentials.php');
-include('includes/config.php');
+include('config.php');
 
 $iConn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) or die(myError(__FILE__,__LINE__,mysqli_connect_error()));
 
@@ -19,7 +19,7 @@ if(isset($_POST['reg_user'])){
 
 $first_name = mysqli_real_escape_string($db, $_POST['first_name']); 
 $last_name = mysqli_real_escape_string($db, $_POST['last_name']);
-$username = mysqli_real_escape_string($db, $_POST['username']);
+$username = mysqli_real_escape_string($db, $_POST['$username']);
 $email = mysqli_real_escape_string($db, $_POST['email']);
 $Password_1 = mysqli_real_escape_string($db, $_POST['Password_1']);
 $Password_2 = mysqli_real_escape_string($db, $_POST['Password_2']);
@@ -61,7 +61,7 @@ if($rows){
 if(count($errors) < 1){
     $password = md5($password_1); //encrypt 
     $query = "INSERT INTO Users (first_name, last_name, username, email, password) 
-        VALUES ('$first_name', '$last_name', '$$username', '$email', '$password') ";
+        VALUES ('$first_name', '$last_name', '$username', '$email', '$password') ";
     mysqli_query($db, $query);
 
     $_SESSION['username'] = $username;
@@ -85,11 +85,11 @@ if(count($errors) < 1){
 
     if(count($errors) == 0){
         $password = md5($password); //encrypt 
-        $query = "SELECT * FROM Users WHERE $username = '$username' AND Password = '$password' ";
+        $query = "SELECT * FROM Users WHERE username = '$username' AND password = '$password' ";
         $results = mysqli_query($db, $query);
 
         if(mysqli_num_rows($results) == 1){
-            $_SESSION['$$username'] = $username;
+            $_SESSION['$username'] = $username;
             $_SESSION['success'] = $success;
             header('Location: index.php');
 

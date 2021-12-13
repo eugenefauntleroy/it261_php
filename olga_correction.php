@@ -16,6 +16,9 @@ $errors = array();
 $success = 'You are now logged in!';
 //  end 
 
+// WHY are you connecting again - 
+$db = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+
 if(isset($_POST['reg_user'])){
 
 $first_name = mysqli_real_escape_string($db, $_POST['first_name']); 

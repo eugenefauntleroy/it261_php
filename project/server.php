@@ -1,10 +1,12 @@
+<!--corrections/edits recommended by olga-->
+
 <?php 
 session_start();
 //include('includes/credentials.php');
 include('config.php');
 
-$iConn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) or die(myError(__FILE__,__LINE__,mysqli_connect_error()));
-
+$db = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME)or die(myError(__FILE__,__LINE__,mysqli_connect_error()));
+// Place in the config file
 $first_name = '';
 $last_name = '';
 $username = '';
@@ -12,8 +14,7 @@ $email= '';
 $password = '';
 $errors = array();
 $success = 'You are now logged in!';
-
-$db = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+//  end 
 
 if(isset($_POST['reg_user'])){
 
@@ -34,10 +35,13 @@ if(empty($last_name)){
 if(empty($username)){
     array_push($errors, 'User name is required');
 }
-if(empty($Email)){
+
+// SHOULD BE LOWERCASE ---- if(empty($email)){
+if(empty($email)){
     array_push($errors, 'Email is required');
 }
-if(empty($Password_1) || empty($Password_2)){
+// if empty the first password
+if(empty($Password_1)){
     array_push($errors, 'Password is required');
 }
 if($Password_1 !== $Password_2){
@@ -46,21 +50,26 @@ if($Password_1 !== $Password_2){
 
 $user_check_query = "SELECT * FROM users WHERE username = '$username' 
     OR Email = '$email' LIMIT 1";
-$result = mysqli_query($db, $user_check_query) or die(myError(__FILE__,__LINE__,mysqli_error($iConn)));
+
+// BELOW YOU ARE REFERENCING $db, not $db?????
+$result = mysqli_query($db, $user_check_query);
 $rows = mysqli_fetch_assoc($result);
 
 if($rows){
     if($rows['$username'] == $username){
         array_push($errors, 'Username already exists');
     }
-    if($rows['Email'] == $email){
+    // you're capitalizing Email -- SHOULD BE email
+    if($rows['email'] == $email){
         array_push($errors, 'Email already exists');
     }
 }
-
-if(count($errors) < 1){
+// if(count($errors == 0)) {}
+if(count($errors) < 0){
+    // YOU ARE NOT CONSISTENT WITH YOUR UPPER AND LOWERCASES!!!!!  YOU HAVE USED $Password_1
     $password = md5($password_1); //encrypt 
-    $query = "INSERT INTO Users (first_name, last_name, username, email, password) 
+    // again uppercase Users....????? or users
+    $query = "INSERT INTO users (first_name, last_name, username, email, password) 
         VALUES ('$first_name', '$last_name', '$username', '$email', '$password') ";
     mysqli_query($db, $query);
 
@@ -70,10 +79,10 @@ if(count($errors) < 1){
 }
 
 } 
-
+// NOW YOU ARE BACK TO CONNECTING WITH $db....???
     if (isset($_POST['login_user'])) {
-        $username = mysqli_real_escape_string($iConn, $_POST['username']);
-        $password = mysqli_real_escape_string($iConn, $_POST['password']);
+        $username = mysqli_real_escape_string($db, $_POST['username']);
+        $password = mysqli_real_escape_string($db, $_POST['password']);
     
         if (empty($username)) {
             array_push($errors, 'Username is required');

@@ -1,3 +1,5 @@
+
+   
 <?php //errors page
 
 if(count($errors) > 0) : ?>

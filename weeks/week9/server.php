@@ -2,10 +2,10 @@
 
 <?php 
 session_start();
-include('includes/credentials.php');
+//include('includes/credentials.php');
 include('config.php');
 
-$db = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) or die(myError(__FILE__,__LINE__,mysqli_connect_error()));
+$db = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME)or die(myError(__FILE__,__LINE__,mysqli_connect_error()));
 // Place in the config file
 $first_name = '';
 $last_name = '';
@@ -37,7 +37,7 @@ if(empty($username)){
 }
 
 // SHOULD BE LOWERCASE ---- if(empty($email)){
-if(empty($Email)){
+if(empty($email)){
     array_push($errors, 'Email is required');
 }
 // if empty the first password
@@ -60,16 +60,16 @@ if($rows){
         array_push($errors, 'Username already exists');
     }
     // you're capitalizing Email -- SHOULD BE email
-    if($rows['Email'] == $email){
+    if($rows['email'] == $email){
         array_push($errors, 'Email already exists');
     }
 }
 // if(count($errors == 0)) {}
-if(count($errors) < 1){
+if(count($errors) < 0){
     // YOU ARE NOT CONSISTENT WITH YOUR UPPER AND LOWERCASES!!!!!  YOU HAVE USED $Password_1
     $password = md5($password_1); //encrypt 
     // again uppercase Users....????? or users
-    $query = "INSERT INTO Users (first_name, last_name, username, email, password) 
+    $query = "INSERT INTO users (first_name, last_name, username, email, password) 
         VALUES ('$first_name', '$last_name', '$username', '$email', '$password') ";
     mysqli_query($db, $query);
 

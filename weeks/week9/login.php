@@ -1,6 +1,6 @@
 <?php
 include('server.php');
-include('includes/header-form.php');
+//include('includes/header-form.php');
 ?>
 <div id="wrapper">
 <h1>Login!</h1>

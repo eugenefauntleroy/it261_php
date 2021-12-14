@@ -5,8 +5,6 @@ session_start();
 //include('includes/credentials.php');
 include('config.php');
 
-$sql = 'SELECT * FROM users';
-
 $db = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME)or die(myError(__FILE__,__LINE__,mysqli_connect_error()));
 // Place in the config file
 $first_name = '';

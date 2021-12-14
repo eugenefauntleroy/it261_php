@@ -98,7 +98,7 @@ if(count($errors) == 0){
         $results = mysqli_query($db, $query);
 
         if(mysqli_num_rows($results) == 1){
-            $_SESSION['$username'] = $username;
+            $_SESSION['username'] = $username;
             $_SESSION['success'] = $success;
             header('Location: index.php');
 

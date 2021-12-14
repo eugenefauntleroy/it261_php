@@ -67,7 +67,7 @@ if($rows){
     }
 }
 // if(count($errors == 0)) {}
-if(count($errors) < 0){
+if(count($errors) == 0){
     // YOU ARE NOT CONSISTENT WITH YOUR UPPER AND LOWERCASES!!!!!  YOU HAVE USED $Password_1
     $password = md5($password_1); //encrypt 
     // again uppercase Users....????? or users

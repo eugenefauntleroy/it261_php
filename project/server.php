@@ -9,8 +9,8 @@ $db = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME)or die(myError(__FIL
 // Place in the config file
 $first_name = '';
 $last_name = '';
-$username = '';
 $email= '';
+$username = '';
 $password = '';
 $errors = array();
 $success = 'You are now logged in!';
@@ -20,7 +20,7 @@ if(isset($_POST['reg_user'])){
 
 $first_name = mysqli_real_escape_string($db, $_POST['first_name']); 
 $last_name = mysqli_real_escape_string($db, $_POST['last_name']);
-$username = mysqli_real_escape_string($db, $_POST['$username']);
+$username = mysqli_real_escape_string($db, $_POST['username']);
 $email = mysqli_real_escape_string($db, $_POST['email']);
 $Password_1 = mysqli_real_escape_string($db, $_POST['Password_1']);
 $Password_2 = mysqli_real_escape_string($db, $_POST['Password_2']);
@@ -56,7 +56,7 @@ $result = mysqli_query($db, $user_check_query);
 $rows = mysqli_fetch_assoc($result);
 
 if($rows){
-    if($rows['$username'] == $username){
+    if($rows['username'] == $username){
         array_push($errors, 'Username already exists');
     }
     // you're capitalizing Email -- SHOULD BE email
@@ -65,9 +65,9 @@ if($rows){
     }
 }
 // if(count($errors == 0)) {}
-if(count($errors) < 0){
+if(count($errors) == 0){
     // YOU ARE NOT CONSISTENT WITH YOUR UPPER AND LOWERCASES!!!!!  YOU HAVE USED $Password_1
-    $password = md5($password_1); //encrypt 
+    $password = md5($Password_1); //encrypt 
     // again uppercase Users....????? or users
     $query = "INSERT INTO users (first_name, last_name, username, email, password) 
         VALUES ('$first_name', '$last_name', '$username', '$email', '$password') ";

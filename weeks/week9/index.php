@@ -52,4 +52,4 @@ if(isset($_SESSION['success'])) : ?>
 <h1>Welcome to the home page</h1>
     </wrapper>
 <?php 
-include('includes/footer.php/');
+include('includes/footer.php');

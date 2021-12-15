@@ -1,5 +1,3 @@
-<!--corrections/edits recommended by olga-->
-
 <?php 
 session_start();
 //include('includes/credentials.php');
@@ -94,7 +92,7 @@ if(count($errors) == 0){
 
     if(count($errors) == 0){
         $password = md5($password); //encrypt 
-        $query = "SELECT * FROM Users WHERE username = '$username' AND password = '$password' ";
+        $query = "SELECT * FROM users WHERE username = '$username' AND password = '$password' ";
         $results = mysqli_query($db, $query);
 
         if(mysqli_num_rows($results) == 1){

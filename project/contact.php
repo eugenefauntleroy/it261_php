@@ -1,6 +1,6 @@
 <?php
-include('config.php');
-include('includes/header-form.php');
+include('proj_config.php');
+include('include/header-form.php');
 ?>
 
     <div id="wrapper"> 
@@ -13,10 +13,7 @@ include('includes/header-form.php');
 </main> 
     
 <aside class="contact">   
-<?php echo spice_pics(); ?>
-</aside>
-</div> <!-- end contact -->
-</div><!--end wrapper -->
+
 <?php
 include('includes/footer.php');
 ?>

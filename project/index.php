@@ -16,15 +16,16 @@ if(isset($_GET['logout'])){
 
 include('includes/header.php');
 
+
+
 define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
 // $key             $value
 $nav['index.php'] = 'Home';
 $nav['about.php'] = 'About';
-$nav['daily.php'] = 'Daily';
-$nav['project.php'] = 'Cities';
+$nav['switch.php'] = 'Daily';
 $nav['contact.php'] = 'Contact';
-// $nav['thx.php'] = 'Thank You';
-$nav['gallery.php'] = 'Gallery';
+$nav['thnx.php'] = 'Thank You';
+$nav['vacation.php'] = 'Vacation';
 
 function my_nav($nav) {
     $my_return = '';
@@ -40,28 +41,28 @@ function my_nav($nav) {
     
     switch(THIS_PAGE) {
         case 'index.php'; 
-        $title = 'Home page of our IT 261 Website';
+        $title = 'Home';
         $body = 'home';
-        $headline = 'Welcome to our IT 261 Website Home Page';
+        $headline = 'Welcome to my Home Page';
         $background_color = ' background-color:#ffffff';
         break;
     
         case 'about.php'; 
-        $title = 'About page of our IT 261 Website';
+        $title = 'About this website';
         $body = 'about inner';
         $headline = 'Welcome to our About Page';
         break;
     
-        case 'daily.php'; 
-        $title = 'Daily page of our IT 261 Website';
+        case 'switch.php'; 
+        $title = 'Switch page';
         $body = 'daily inner';
-        $headline = 'Welcome to our Daily page where my HW3 Switch will display';
+        $headline = 'Welcome to our switch page';
         break;
     
-        case 'project.php'; 
-        $title = 'Project page of our IT 261 Website';
+        case 'vacation.php'; 
+        $title = 'Vacation page';
         $body = 'project inner';
-        $headline = 'Welcome to our Project Page';
+        $headline = 'Welcome to our Vacation Page';
         break;
     
         case 'contact.php'; 
@@ -70,22 +71,17 @@ function my_nav($nav) {
         $headline = 'Welcome to Our Contact Page';
         break;
     
-        case 'thx.php'; 
+        case 'thnx.php'; 
         $title = 'Thank You Page';
         $body = 'thank you inner';
-        $headline = 'Thanks For Ordering Our spice!';
-        break;
-    
-        case 'gallery.php'; 
-        $title = 'Gallery page of our IT 261 Website';
-        $body = 'gallery inner';
-        $headline = 'Welcome to our Gallery Page';
+        $headline = 'Thanks!';
         break;
     }
 
 ?>
 
-
+<div id="wrapper">
+<img src="includes/images/mich_dig_copy.jpg">
 
 <h1>Welome to our home page!</h1>
   

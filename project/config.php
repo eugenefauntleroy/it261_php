@@ -11,8 +11,8 @@ $nav['about.php'] = 'About';
 $nav['switch.php'] = 'Daily';
 $nav['vacation.php'] = 'Vacation';
 $nav['contact.php'] = 'Contact';
-// $nav['thx.php'] = 'Thank You';
-$nav['gallery.php'] = 'Gallery';
+$nav['thnx.php'] = 'Thank You';
+
 
 // create a function for our navigation
 //  so the function is called out on our header.php page
@@ -45,13 +45,13 @@ switch(THIS_PAGE) {
     $headline = 'Welcome to our About Page';
     break;
 
-    case 'daily.php'; 
+    case 'switch.php'; 
     $title = 'Daily page of our IT 261 Website';
     $body = 'daily inner';
     $headline = 'Welcome to our Daily page where my HW3 Switch will display';
     break;
 
-    case 'project.php'; 
+    case 'vacation.php'; 
     $title = 'Project page of our IT 261 Website';
     $body = 'project inner';
     $headline = 'Welcome to our Project Page';
@@ -67,12 +67,6 @@ switch(THIS_PAGE) {
     $title = 'Thank You Page';
     $body = 'thank you inner';
     $headline = 'Thanks For Ordering Our spice!';
-    break;
-
-    case 'gallery.php'; 
-    $title = 'Gallery page of our IT 261 Website';
-    $body = 'gallery inner';
-    $headline = 'Welcome to our Gallery Page';
     break;
 }
 

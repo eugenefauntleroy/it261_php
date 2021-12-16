@@ -11,11 +11,11 @@ if(isset($_GET['id'])){
 $sql = 'SELECT * FROM vacation WHERE vacationID = '.$id.'';
 
 //connect to our database
-$iConn = @mysqli_connect(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME) 
+$db = @mysqli_connect(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME) 
 or die(myerror(__FILE__,__LINE__,mysqli_connect_error()));
 //we extract the data here
 
-$result = mysqli_query($iConn,$sql) or die(myerror(__FILE__,__LINE__,mysqli_error($iConn)));
+$result = mysqli_query($db,$sql) or die(myerror(__FILE__,__LINE__,mysqli_error($db)));
 
 if(mysqli_num_rows($result) > 0){ 
     while($row = mysqli_fetch_assoc($result)){
@@ -33,11 +33,11 @@ include('includes/header.php');
 ?>
 
 <main>
-    <h2>Welcome to <?php echo $vacantion_name; ?>'s Page</h2>
+    <h2>Welcome to <?php echo $vacation_name; ?>'s Page</h2>
     <?php 
         if($Feedback == ''){
             echo '<ul>';
-            echo '<li><b>vacation_name: </b> '.$vacantion_name.' </li>';
+            echo '<li><b>vacation_name: </b> '.$vacation_name.' </li>';
             echo '<li><b>vacation_place: </b> '.$vacation_place.' </li>';
             echo '<li><b>vacation_language: </b> '.$vacation_language.' </li>';
             echo '</ul>';
@@ -52,7 +52,7 @@ include('includes/header.php');
 <aside>
 <?php 
     if($Feedback == ''){
-        echo '<img class = "sign" src="images/vacation_images/'.$vacation_name.'.jpg" alt="'.$vacation_place.'">';
+        echo '<img class = "sign" src="images/vac_images/'.$vacation_name.'.jpg" alt="'.$vacation_place.'">';
     }else{
         echo $Feedback;
     }
@@ -63,5 +63,5 @@ include('includes/footer.php');
 
 @mysqli_free_result($result);
 
-@mysqli_close($iConn);
+@mysqli_close($db);
 ?>

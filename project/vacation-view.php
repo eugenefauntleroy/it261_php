@@ -52,7 +52,7 @@ include('includes/header.php');
 <aside>
 <?php 
     if($Feedback == ''){
-        echo '<img class = "sign" src="images/vac_images/'.$vacation_name.'.jpg" alt="'.$vacation_place.'">';
+        echo '<img class = "sign" src="includes/images/vac_images/'.$vacation_name.'.jpg" alt="'.$vacation_place.'">';
     }else{
         echo $Feedback;
     }

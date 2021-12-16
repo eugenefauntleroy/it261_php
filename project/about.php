@@ -30,10 +30,10 @@ Hello,
 
     <h1> Welome to my page!</h1>
 
-    <a href="images/mich_dig_copy.jpg"><img src="images/mich_dig_copy" alt="Michito Iwata"></a>
+    <img src="includes/images/mich_dig_copy" alt="Michito Iwata"></a>
 
-    <h1>Our Wonderful Members!</h1>
-    <a href="images/me.jpg"><img src="images/me.jpg" alt="This is me"></a>
+    <h1>Me!</h1>
+    <img src="images/me.jpg" alt="This is me"></a>
 
      
 <?php 

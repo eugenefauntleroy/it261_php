@@ -14,9 +14,6 @@ if(isset($_GET['logout'])){
     header('Location: login.php');
 }
 
-include('includes/header.php');
-
-
 
 define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
 // $key             $value
@@ -77,6 +74,9 @@ function my_nav($nav) {
         $headline = 'Thanks!';
         break;
     }
+
+include('includes/header.php');
+
 
 ?>
 

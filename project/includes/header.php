@@ -6,8 +6,14 @@
 <meta name="viewport" content="width=device-width" />
 <meta name="referrer" content="origin">
 <title>Registration Using PHP and SQL</title>
-<link rel="stylesheet" href="css/styles.css" />
+<link rel="stylesheet" href="css/style.css" />
 
 </head>
 <body>
 <header>
+
+<nav>
+        <ul> <?php echo my_nav($nav); ?> </ul>
+</nav> 
+
+</header>

@@ -2,12 +2,32 @@
 include('includes/header.php');
 ?>
 
-    <div id="wrapper">
-    <img src="images/mich_dig_copy.jpg">
+<body>
+    <header>
+        <div class="header-inner">
+        <a href="index.html">
+        <img id="LOGO" src="images/1422px-PHP-logo.svg.png"
+        alt="LOGO">
+        </a>
+        <nav>
+            <ul>
+<li><a href="">Home</a></li> 
+<li><a href="website/daily.php">Switch</a></li>
+<li><a href="adder.php">Troubleshoot</a></li>
+<li><a href="calculator-days-errors-sticky.php">Calculator</a></li>
+<li><a href="website/contact.php">Email</a></li>
+<li><a href="website/gallery.php">Gallery</a></li>
+<li><a href="website/project.php">Cities</a></li>
+<li><a href="project/login.php">Final Project</a></li>
+
+</ul>
+    </nav>
+    </div> 
+    </header>
     
 <main>
-<h1>Welcome to our home page of it261 website</h1>
-<p>Arrival entered an if drawing request. How daughters not promotion few knowledge contented. Yet winter law behind number stairs garret excuse. Minuter we natural conduct gravity if pointed oh no. Am immediate unwilling of attempted admitting disposing it. Handsome opinions on am at it ladyship.</p>
+<h1>Welcome to my website</h1>
+<p>Something</p>
 
 </main> 
     

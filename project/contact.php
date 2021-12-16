@@ -1,6 +1,6 @@
 <?php
-include('proj_config.php');
-include('include/header-form.php');
+include('config.php');
+include('includes/header-form.php');
 ?>
 
     <div id="wrapper"> 
@@ -13,7 +13,9 @@ include('include/header-form.php');
 </main> 
     
 <aside class="contact">   
-
+</aside>
+</div> <!-- end contact -->
+</div><!--end wrapper -->
 <?php
 include('includes/footer.php');
 ?>
